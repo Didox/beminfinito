@@ -1,0 +1,25 @@
+
+<table class="mGrid" id="jsondata">
+<thead>
+<th>Id</th>
+<th>Name</th>
+<th>Age</th>
+<th>Gender</th>
+<th>Location</th>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    var url= "getjson.php";
+
+    $.getJSON(url,function(data){
+        console.log(data)
+    });
+});
+
+</script>

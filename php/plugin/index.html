@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Bem Infinito - Plugin</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+
+    <style type="text/css">
+
+        body {
+            overflow-x: hidden;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .controller {
+            width: 100px;
+            height: 100px;
+            background: rgba(0,0,0,0.4);
+            position: fixed;
+            top: 350px;
+            cursor: pointer;
+            line-height: 100px;
+            text-align: center;
+            font-size: 76px;
+            color: #fff;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
+
+        .legenda {
+            padding: 10px;
+            font-size: 22px;
+            background: rgba(0,0,0,0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            color: #fff;
+            font-family: arial;
+            text-align: center;
+            text-shadow: 1px 1px 7px rgba(150, 150, 150, 1);
+        }
+    </style>
+
+</head>
+<body>
+
+    <span class="legenda">Fluxo inicial com aplicação do plugin 1 de 7</span>
+
+    <img src="img/1.png" alt="Tela">
+
+    <span class="controller prev" title="Voltar">«</span>
+    <span class="controller next" title="Avançar">»</span>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            "use strict";
+
+            var indice = 1;
+
+            function mudarFotos() {
+
+                $('.controller').on('click', function() {
+
+                    if ($(this).hasClass('prev')) {
+                        voltar();
+                    } else {
+                        avancar();
+                    }
+
+                });
+            }
+
+            function legendaFoto() {
+
+                switch(indice) {
+                    case 1:
+                        $('.legenda').text('Fluxo inicial com aplicação do plugin 1 de 7');
+                        break;
+                    case 2:
+                        $('.legenda').text('Exibição da tag avisando que o produto pode ser doado 2 de 7');
+                        break;
+                    case 3:
+                        $('.legenda').text('Produto adicionado para doação 3 de 7');
+                        break;
+                    case 4:
+                        $('.legenda').text('Seleção de endereço de cobrança 4 de 7');
+                        break;
+                    case 5:
+                        $('.legenda').text('Resumo do pedido 5 de 7');
+                        break;
+                    case 6:
+                        $('.legenda').text('Forma de pagamento 6 de 7');
+                        break;
+                    case 7:
+                        $('.legenda').text('Mensagem de agradecimento da doação 7 de 7');
+                        break;
+                    default:
+                        $('.legenda').text('Fluxo inicial com aplicação do plugin 1 de 7');
+                }
+            }
+
+
+
+            function voltar() {
+
+                if (indice === 1) {
+                    return false;
+                }
+
+                indice--;
+
+                $('img').attr('src', 'img/' + indice + '.png');
+
+                legendaFoto();
+
+            }
+
+            function avancar() {
+
+                if (indice === 7) {
+                    return false;
+                }
+
+                indice++;
+
+                $('img').attr('src', 'img/' + indice + '.png');
+
+                legendaFoto();
+            }
+
+            mudarFotos();
+        })();
+    </script>
+</body>
+</html>

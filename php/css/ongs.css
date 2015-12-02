@@ -1,0 +1,36 @@
+.content-page {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.local-ong {
+    display: block;
+}
+
+.dados-ong a {
+    display: block;
+}
+
+h2 {
+    margin: 40px 0;
+}
+
+.status-doacao {
+    width: 408px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.status-bar {
+    width: 40%;
+    height: 16px;
+    float: left;
+    background-color: #f2b01e;
+    border-radius: 4px;
+}

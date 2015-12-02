@@ -1,0 +1,41 @@
+/* TEAM */
+	PO:bruna Gomes
+	Twitter: @brunadoo
+	From:São Paulo, SP, Brazil
+
+	UX: Carla Real
+	Twitter: @carlaracardoso
+	From:São Paulo, SP, Brazil
+
+	Front-end Developer: Karol Harumi
+	Twitter: @karolharumi
+	From:São Paulo, SP, Brazil
+
+	Front-end Developer: Luan Fagundes
+	Twitter: @luan03
+	From:São Paulo, SP, Brazil
+
+	Designer: Alexandre Capozzoli
+	Twitter: @alexandrecgd
+	From:São Paulo, SP, Brazil
+
+/* THANKS */
+
+	Mentor: Gisella Prado
+	Twitter: @gisellaprado
+	From: São Paulo, SP, Brazil
+
+	Mentor: Sami Reininger
+	Facebook: /sami.reininger
+	From: São Paulo, SP, Brazil
+
+	Mentor: Laura Gurgel
+	Facebook: /laura.gurgel.1
+	From: São Paulo, SP, Brazil
+		
+
+/* SITE */
+	Last update:2015/08/23
+	Language: Portuguese
+	Doctype:HTML5
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop
