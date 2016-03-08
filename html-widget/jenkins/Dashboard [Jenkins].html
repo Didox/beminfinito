@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://jenkins.wordpress.abril.com.br:8080/ -->
+<html><head resurl="/static/89fde31b"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <title>Dashboard [Jenkins]</title><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/style.css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/color.css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/responsive-grid.css"><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://jenkins.wordpress.abril.com.br:8080/static/89fde31b/favicon.ico"><link color="black" rel="mask-icon" href="http://jenkins.wordpress.abril.com.br:8080/images/mask-icon.svg"><script>var isRunAsTest=false; var rootURL=""; var resURL="/static/89fde31b";</script><script src="./Dashboard [Jenkins]_files/prototype.js" type="text/javascript"></script><script src="./Dashboard [Jenkins]_files/behavior.js" type="text/javascript"></script><script src="./Dashboard [Jenkins]_files/bind.js" type="text/javascript"></script><script src="./Dashboard [Jenkins]_files/yahoo-min.js"></script><script src="./Dashboard [Jenkins]_files/dom-min.js"></script><script src="./Dashboard [Jenkins]_files/event-min.js"></script><script src="./Dashboard [Jenkins]_files/animation-min.js"></script><script src="./Dashboard [Jenkins]_files/dragdrop-min.js"></script><script src="./Dashboard [Jenkins]_files/container-min.js"></script><script src="./Dashboard [Jenkins]_files/connection-min.js"></script><script src="./Dashboard [Jenkins]_files/datasource-min.js"></script><script src="./Dashboard [Jenkins]_files/autocomplete-min.js"></script><script src="./Dashboard [Jenkins]_files/menu-min.js"></script><script src="./Dashboard [Jenkins]_files/element-min.js"></script><script src="./Dashboard [Jenkins]_files/button-min.js"></script><script src="./Dashboard [Jenkins]_files/storage-min.js"></script><script src="./Dashboard [Jenkins]_files/hudson-behavior.js" type="text/javascript"></script><script src="./Dashboard [Jenkins]_files/sortable.js" type="text/javascript"></script><script>crumb.init("", "");</script><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/container.css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/skin.css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/container(1).css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/button.css"><link rel="stylesheet" type="text/css" href="./Dashboard [Jenkins]_files/menu.css"><link title="Jenkins" rel="search" type="application/opensearchdescription+xml" href="http://jenkins.wordpress.abril.com.br:8080/opensearch.xml"><meta name="ROBOTS" content="INDEX,NOFOLLOW"><link title="Jenkins:All (all builds)" rel="alternate" type="application/rss+xml" href="http://jenkins.wordpress.abril.com.br:8080/rssAll"><link title="Jenkins:All (all builds) (RSS 2.0)" rel="alternate" type="application/rss+xml" href="http://jenkins.wordpress.abril.com.br:8080/rssAll?flavor=rss20"><link title="Jenkins:All (failed builds)" rel="alternate" type="application/rss+xml" href="http://jenkins.wordpress.abril.com.br:8080/rssFailed"><link title="Jenkins:All (failed builds) (RSS 2.0)" rel="alternate" type="application/rss+xml" href="http://jenkins.wordpress.abril.com.br:8080/rssFailed?flavor=rss20"><script src="./Dashboard [Jenkins]_files/cookie-min.js"></script><script>
+              YAHOO.util.Cookie.set("screenResolution", screen.width+"x"+screen.height);
+            </script><script src="./Dashboard [Jenkins]_files/cookie-min.js"></script></head><body data-model-type="hudson.model.AllView" id="jenkins" data-version="jenkins-1.645" class="yui-skin-sam jenkins-1.645">
+
+<style>
+.ui-tooltip {
+    position: absolute;
+    float: left;
+    padding: 10px 20px;
+    border: 2px solid #69a61e;
+    font: bold 14px/20px sans-serif;
+    color: #69a61e;
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #fff;
+
+    z-index: 9999999;
+    top: 730px;
+    left: 400px;
+  }
+
+  .ui-tooltip:after,
+  .ui-tooltip:before{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-style: solid;
+    width: 0; 
+    height: 0; 
+    content:'';
+  }
+
+  .ui-tooltip:after {
+    margin-left: -10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+  }
+  .ui-tooltip:before {
+    margin-left: -14px;
+    border-width: 14px 14px 0 14px;
+    border-color: #69a61e transparent transparent transparent;
+
+  }
+
+  .ui-tooltip .container{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .ui-tooltip .container .nI{
+    width: 40px;
+    text-align: center;
+  }
+
+  .ui-tooltip .container img{
+    width: 78px;
+  }
+
+  .ui-tooltip .container .nR, .ui-tooltip .container .nA {
+    width: 30px;
+    text-align: center;
+    background-color: #69a61e;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .ui-tooltip .container .send {
+    width: 60px;
+    text-align: center;
+    background-color: #69a61e;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .ui-tooltip .container .title{
+    margin-bottom: 10px;
+  }
+  .ui-tooltip .container .buttons{
+    margin-top: 10px;
+  }
+  .ui-tooltip .container .buttons img{
+    width: 50px;
+    margin-left: 10px;
+    display: none;
+  }
+  </style>
+
+
+  <div role="tooltip" class="ui-tooltip">
+    <div class="container">
+      <div class="title">Usar este item</div>
+      <div>
+        <img src="./Dashboard [Jenkins]_files/headshot.png">
+      </div>
+      <div class="buttons">
+        <input type="button" class="nR" value="-">
+        <input type="text" class="nI" value="1">
+        <input type="button" class="nA" value="+">
+        <input type="button" class="send" value="Enviar">
+        <img src="../imagens/beminfinito.png">
+      </div>
+    </div>
+  </div>
+
+
+
+            <iframe id="_yuiResizeMonitor" title="Text Resize Monitor" tabindex="-1" role="presentation" style="position: absolute; visibility: visible; border-width: 0px; width: 2em; height: 2em; left: 0px; top: -27px; background-color: transparent;"></iframe><div id="tt" class="yui-module yui-overlay yui-tt yui-overlay-hidden" style="z-index: 999; visibility: hidden;"><div class="bd"></div></div><a href="http://jenkins.wordpress.abril.com.br:8080/#skip2content" class="skiplink">Skip to content</a><div id="page-head"><div id="header"><div class="logo"><a id="jenkins-home-link" href="http://jenkins.wordpress.abril.com.br:8080/"><img id="jenkins-head-icon" alt="title" src="./Dashboard [Jenkins]_files/headshot.png"><img id="jenkins-name-icon" height="34" alt="title" width="139" src="./Dashboard [Jenkins]_files/title.png"></a></div><div class="login"></div><div class="searchbox hidden-xs"><form style="position:relative;" name="search" action="http://jenkins.wordpress.abril.com.br:8080/search/" class="no-json" method="get"><div id="search-box-minWidth" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;"></div><div id="search-box-sizer" style="font-family: Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: normal;"></div><div id="searchform" class="yui-ac"><input id="search-box" placeholder="search" name="q" class="has-default-text yui-ac-input defaulted" autocomplete="off" style="width: 255px;">&nbsp;<a href="http://wiki.jenkins-ci.org/display/JENKINS/Search+Box"><img style="width: 16px; height: 16px; " class="icon-help icon-sm" src="./Dashboard [Jenkins]_files/help.png"></a><div id="search-box-completion" class="yui-ac-container" style="width: 255px; left: 0px; top: 26px;"><div class="yui-ac-content" style="display: none; width: 255px;"><div class="yui-ac-hd" style="display: none;"></div><div class="yui-ac-bd"><ul><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li><li style="display: none;"></li></ul></div><div class="yui-ac-ft" style="display: none;"></div></div></div><script>createSearchBox("/search/");</script></div></form></div></div><div id="breadcrumbBar"><link rel="stylesheet" href="./Dashboard [Jenkins]_files/breadcrumbs.css" type="text/css"><script src="./Dashboard [Jenkins]_files/breadcrumbs.js" type="text/javascript"></script><div style="height: 26px;"></div><div class="top-sticker noedge" style="position: fixed; top: 40px; left: 0px;"><div class="top-sticker-edge"></div><div class="top-sticker-inner"><div id="right-top-nav"><div id="right-top-nav"><div class="smallfont"><a href="http://jenkins.wordpress.abril.com.br:8080/?auto_refresh=true">ENABLE AUTO REFRESH</a></div></div></div><ul id="breadcrumbs"><li class="item"><a class="model-link inside breadcrumbBarAnchor" href="http://jenkins.wordpress.abril.com.br:8080/">Jenkins</a></li><li class="children" href="/"></li></ul><div id="breadcrumb-menu-target"></div></div></div></div></div><div id="menuSelector" class="" style="left: 504px; top: 168.5px; visibility: hidden;"></div><div id="page-body" class="clear"><div id="side-panel"><div id="tasks"><div class="task"><a class="task-icon-link" href="http://jenkins.wordpress.abril.com.br:8080/view/All/newJob"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-new-package icon-md" src="./Dashboard [Jenkins]_files/new-package.png"></a>&nbsp;<a class="task-link" href="http://jenkins.wordpress.abril.com.br:8080/view/All/newJob">New Item</a></div><div class="task"><a class="task-icon-link" href="http://jenkins.wordpress.abril.com.br:8080/asynchPeople/"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-user icon-md" src="./Dashboard [Jenkins]_files/user.png"></a>&nbsp;<a class="task-link" href="http://jenkins.wordpress.abril.com.br:8080/asynchPeople/">People</a></div><div class="task"><a class="task-icon-link" href="http://jenkins.wordpress.abril.com.br:8080/view/All/builds"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-notepad icon-md" src="./Dashboard [Jenkins]_files/notepad.png"></a>&nbsp;<a class="task-link" href="http://jenkins.wordpress.abril.com.br:8080/view/All/builds">Build History</a></div><div class="task"><a class="task-icon-link" href="http://jenkins.wordpress.abril.com.br:8080/manage"><img style="width: 24px; height: 24px; width: 24px; height: 24px; margin: 2px;" class="icon-setting icon-md" src="./Dashboard [Jenkins]_files/setting.png"></a>&nbsp;<a class="task-link" href="http://jenkins.wordpress.abril.com.br:8080/manage">Manage Jenkins</a></div><div class="task"><a class="task-icon-link" href="http://jenkins.wordpress.abril.com.br:8080/credential-store"><img style="width: 24px; height: 24px; margin: 2px;" alt="" src="./Dashboard [Jenkins]_files/credentials.png"></a>&nbsp;<a class="task-link" href="http://jenkins.wordpress.abril.com.br:8080/credential-store">Credentials</a></div></div><div id="buildQueue" class="container-fluid pane-frame track-mouse expanded"><div class="row"><div class="col-xs-24 pane-header"><a title="collapse" class="collapse" href="http://jenkins.wordpress.abril.com.br:8080/toggleCollapse?paneId=buildQueue"><img style="width: 16px; height: 16px; " alt="collapse" class="icon-collapse icon-sm" src="./Dashboard [Jenkins]_files/collapse.png"></a>Build Queue</div></div><div class="row pane-content"><table class="pane "><tbody><tr><td class="pane" colspan="2">No builds in the queue.</td></tr></tbody></table></div></div><script defer="defer">refreshPart('buildQueue',"/ajaxBuildQueue");</script><div id="executors" class="container-fluid pane-frame track-mouse expanded"><div class="row"><div class="col-xs-24 pane-header"><a title="collapse" class="collapse" href="http://jenkins.wordpress.abril.com.br:8080/toggleCollapse?paneId=executors"><img style="width: 16px; height: 16px; " alt="collapse" class="icon-collapse icon-sm" src="./Dashboard [Jenkins]_files/collapse.png"></a><a href="http://jenkins.wordpress.abril.com.br:8080/computer/">Build Executor Status</a></div></div><div class="row pane-content"><table class="pane "><colgroup><col width="30"><col width="200*"><col width="24"></colgroup><tbody><tr></tr><tr><td class="pane" align="right" style="vertical-align: top">1</td><td class="pane">Idle</td><td class="pane"></td><td class="pane"></td></tr><tr><td class="pane" align="right" style="vertical-align: top">2</td><td class="pane">Idle</td><td class="pane"></td><td class="pane"></td></tr></tbody></table></div></div><script defer="defer">refreshPart('executors',"/ajaxExecutors");</script></div><div id="main-panel"><a name="skip2content"></a><div id="view-message"><div id="systemmessage"></div><div id="description"><div></div><div align="right"><a id="description-link" onclick="return replaceDescription();" href="http://jenkins.wordpress.abril.com.br:8080/editDescription"><img style="width: 16px; height: 16px; " class="icon-notepad icon-sm" src="./Dashboard [Jenkins]_files/notepad(1).png">add description</a></div></div></div><div class="dashboard"><div id="projectstatus-tabBar"><div class="tabBarFrame "><div class="tabBar"><div class="tab active"><input id="tab-1455206787082-" name="tab-group-1455206787082" type="radio" checked="checked"><a class="" href="http://jenkins.wordpress.abril.com.br:8080/">All</a></div><div class="tab"><input id="tab-1455206787082-1" name="tab-group-1455206787082" type="radio"><a class="" href="http://jenkins.wordpress.abril.com.br:8080/view/WordPress%20MasterTheme/">WordPress MasterTheme</a></div><div class="tab"><input id="tab-1455206787082-2" name="tab-group-1455206787082" type="radio"><a class="" href="http://jenkins.wordpress.abril.com.br:8080/view/WordPress%20Plugins/">WordPress Plugins</a></div><div class="tab"><input id="tab-1455206787082-3" name="tab-group-1455206787082" type="radio"><a class="" href="http://jenkins.wordpress.abril.com.br:8080/view/WordPress%20Veja/">WordPress Veja</a></div><div class="tab"><input id="tab-1455206787082-4" name="tab-group-1455206787082" type="radio"><a class="addTab" href="http://jenkins.wordpress.abril.com.br:8080/newView">+</a></div></div><div class="tabBarBaseline"></div></div></div><div class="pane-frame"><table id="projectstatus" class="sortable pane bigtable stripped-odd"><tbody><tr class="header"><th tooltip="Status of the last build" title="Status of the last build"><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">&nbsp;&nbsp;&nbsp;S<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th tooltip="Weather report showing aggregated status of recent builds" title="Weather report showing aggregated status of recent builds"><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">&nbsp;&nbsp;&nbsp;W<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th initialsortdir="down"><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">Name<span class="sortarrow">&nbsp;&nbsp;↓</span></a></th><th><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">Last Success<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">Last Failure<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">Last Duration<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th width="1"><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">&nbsp;<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th><th><a href="http://jenkins.wordpress.abril.com.br:8080/#" class="sortheader">&nbsp;<span class="sortarrow">&nbsp;&nbsp;&nbsp;</span></a></th></tr><tr id="job_Build" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Build/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Build/">Build</a></td><td data="2016-02-05T19:25:30Z">
+        5 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Build/lastSuccessfulBuild/">#86</a></td><td data="2016-02-02T20:36:04Z">
+        8 days 19 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Build/lastFailedBuild/">#71</a></td><td data="11421">11 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Build/build?delay=0sec"><img title="Schedule a build for Build" style="width: 24px; height: 24px; " alt="Schedule a build for Build" onclick="return build_id12242(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12242(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Deploy Production" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="75" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20Production/lastBuild"><img style="width: 32px; height: 32px; " alt="75%" class="icon-health-60to79 icon-lg" src="./Dashboard [Jenkins]_files/health-60to79.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-60to79 icon-sm" src="./Dashboard [Jenkins]_files/health-60to79(1).png"></td><td>Build stability: 1 out of the last 4 builds failed.</td><td align="right">75</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20Production/">Deploy Production</a></td><td data="2016-02-03T19:06:52Z">
+        7 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20Production/lastSuccessfulBuild/">#4</a></td><td data="2016-02-01T21:10:07Z">
+        9 days 18 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20Production/lastFailedBuild/">#1</a></td><td data="4452">4.4 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20Production/build?delay=0sec"><img title="Schedule a build with parameters for Deploy Production" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for Deploy Production" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12243(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Deploy QA" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="80" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20QA/lastBuild"><img style="width: 32px; height: 32px; " alt="80%" class="icon-health-60to79 icon-lg" src="./Dashboard [Jenkins]_files/health-60to79.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-60to79 icon-sm" src="./Dashboard [Jenkins]_files/health-60to79(1).png"></td><td>Build stability: 1 out of the last 5 builds failed.</td><td align="right">80</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20QA/">Deploy QA</a></td><td data="2016-02-05T19:25:49Z">
+        5 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20QA/lastSuccessfulBuild/">#58</a></td><td data="2016-02-05T16:03:59Z">
+        6 days 0 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20QA/lastFailedBuild/">#54</a></td><td data="12101">12 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Deploy%20QA/build?delay=0sec"><img title="Schedule a build with parameters for Deploy QA" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for Deploy QA" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12244(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_PluginsBuild" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsBuild/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsBuild/">PluginsBuild</a></td><td data="2016-02-11T15:39:53Z">
+        26 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsBuild/lastSuccessfulBuild/">#1</a></td><td data="-">N/A</td><td data="7933">7.9 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsBuild/build?delay=0sec"><img title="Schedule a build for PluginsBuild" style="width: 24px; height: 24px; " alt="Schedule a build for PluginsBuild" onclick="return build_id12245(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12245(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_PluginsDeployProd" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployProd/">PluginsDeployProd</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployProd/build?delay=0sec"><img title="Schedule a build with parameters for PluginsDeployProd" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for PluginsDeployProd" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12246(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_PluginsDeployQA" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="25" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployQA/lastBuild"><img style="width: 32px; height: 32px; " alt="25%" class="icon-health-20to39 icon-lg" src="./Dashboard [Jenkins]_files/health-20to39.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-20to39 icon-sm" src="./Dashboard [Jenkins]_files/health-20to39(1).png"></td><td>Build stability: 3 out of the last 4 builds failed.</td><td align="right">25</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployQA/">PluginsDeployQA</a></td><td data="2016-02-11T15:48:13Z">
+        18 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployQA/lastSuccessfulBuild/">#4</a></td><td data="2016-02-11T15:43:58Z">
+        22 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployQA/lastFailedBuild/">#3</a></td><td data="9105">9.1 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsDeployQA/build?delay=0sec"><img title="Schedule a build with parameters for PluginsDeployQA" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for PluginsDeployQA" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12247(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_PluginsPreProdCodeReviewDeploy" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsPreProdCodeReviewDeploy/">PluginsPreProdCodeRe<wbr>viewDeploy</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/PluginsPreProdCodeReviewDeploy/build?delay=0sec"><img title="Schedule a build with parameters for PluginsPreProdCodeReviewDeploy" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for PluginsPreProdCodeReviewDeploy" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12248(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_PreProd CodeReview e Deploy" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/PreProd%20CodeReview%20e%20Deploy/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PreProd%20CodeReview%20e%20Deploy/">PreProd CodeReview e Deploy</a></td><td data="2016-02-10T17:43:40Z">
+        22 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PreProd%20CodeReview%20e%20Deploy/lastSuccessfulBuild/">#74</a></td><td data="2016-02-03T18:58:02Z">
+        7 days 21 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/PreProd%20CodeReview%20e%20Deploy/lastFailedBuild/">#69</a></td><td data="313577">5 min 13 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/PreProd%20CodeReview%20e%20Deploy/build?delay=0sec"><img title="Schedule a build with parameters for PreProd CodeReview e Deploy" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for PreProd CodeReview e Deploy" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12249(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Teste de Segurança" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20de%20Seguran%C3%A7a/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20de%20Seguran%C3%A7a/">Teste de Segurança</a></td><td data="2016-02-05T19:26:19Z">
+        5 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20de%20Seguran%C3%A7a/lastSuccessfulBuild/">#38</a></td><td data="-">N/A</td><td data="16">16 ms</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20de%20Seguran%C3%A7a/build?delay=0sec"><img title="Schedule a build with parameters for Teste de Segurança" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for Teste de Segurança" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12250(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Teste Production" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="75" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Production/lastBuild"><img style="width: 32px; height: 32px; " alt="75%" class="icon-health-60to79 icon-lg" src="./Dashboard [Jenkins]_files/health-60to79.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-60to79 icon-sm" src="./Dashboard [Jenkins]_files/health-60to79(1).png"></td><td>Build stability: 1 out of the last 4 builds failed.</td><td align="right">75</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Production/">Teste Production</a></td><td data="2016-02-03T19:07:17Z">
+        7 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Production/lastSuccessfulBuild/">#4</a></td><td data="2016-02-01T21:09:57Z">
+        9 days 18 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Production/lastFailedBuild/">#1</a></td><td data="18641">18 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Production/build?delay=0sec"><img title="Schedule a build for Teste Production" style="width: 24px; height: 24px; " alt="Schedule a build for Teste Production" onclick="return build_id12251(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12251(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Teste PréProd" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Pr%C3%A9Prod/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Pr%C3%A9Prod/">Teste PréProd</a></td><td data="2016-02-04T17:56:56Z">
+        6 days 22 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Pr%C3%A9Prod/lastSuccessfulBuild/">#6</a></td><td data="2016-02-01T21:09:20Z">
+        9 days 18 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Pr%C3%A9Prod/lastFailedBuild/">#1</a></td><td data="5935">5.9 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20Pr%C3%A9Prod/build?delay=0sec"><img title="Schedule a build for Teste PréProd" style="width: 24px; height: 24px; " alt="Schedule a build for Teste PréProd" onclick="return build_id12252(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12252(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_Teste QA" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20QA/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20QA/">Teste QA</a></td><td data="2016-02-05T19:26:09Z">
+        5 days 20 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20QA/lastSuccessfulBuild/">#47</a></td><td data="2016-01-29T16:45:33Z">
+        12 days
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20QA/lastFailedBuild/">#11</a></td><td data="3628">3.6 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/Teste%20QA/build?delay=0sec"><img title="Schedule a build with parameters for Teste QA" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for Teste QA" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12253(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaBuild" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="66" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaBuild/lastBuild"><img style="width: 32px; height: 32px; " alt="66%" class="icon-health-60to79 icon-lg" src="./Dashboard [Jenkins]_files/health-60to79.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-60to79 icon-sm" src="./Dashboard [Jenkins]_files/health-60to79(1).png"></td><td>Build stability: 1 out of the last 3 builds failed.</td><td align="right">66</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaBuild/">VejaBuild</a></td><td data="2016-02-11T13:22:53Z">
+        2 hr 43 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaBuild/lastSuccessfulBuild/">#3</a></td><td data="2016-02-10T17:19:41Z">
+        22 hr
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaBuild/lastFailedBuild/">#1</a></td><td data="4522">4.5 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaBuild/build?delay=0sec"><img title="Schedule a build for VejaBuild" style="width: 24px; height: 24px; " alt="Schedule a build for VejaBuild" onclick="return build_id12254(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12254(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaDeployProduction" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployProduction/">VejaDeployProduction</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployProduction/build?delay=0sec"><img title="Schedule a build with parameters for VejaDeployProduction" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for VejaDeployProduction" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12255(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaDeployQA" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployQA/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployQA/">VejaDeployQA</a></td><td data="2016-02-11T13:23:03Z">
+        2 hr 43 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployQA/lastSuccessfulBuild/">#2</a></td><td data="-">N/A</td><td data="8112">8.1 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaDeployQA/build?delay=0sec"><img title="Schedule a build with parameters for VejaDeployQA" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for VejaDeployQA" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12256(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaPreProdCodeReviewDeploy" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaPreProdCodeReviewDeploy/">VejaPreProdCodeReviewDeploy</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaPreProdCodeReviewDeploy/build?delay=0sec"><img title="Schedule a build with parameters for VejaPreProdCodeReviewDeploy" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for VejaPreProdCodeReviewDeploy" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12257(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaTesteQA" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteQA/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteQA/">VejaTesteQA</a></td><td data="2016-02-11T13:23:18Z">
+        2 hr 43 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteQA/lastSuccessfulBuild/">#2</a></td><td data="-">N/A</td><td data="2865">2.8 sec</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteQA/build?delay=0sec"><img title="Schedule a build with parameters for VejaTesteQA" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for VejaTesteQA" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12258(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaTesteSeguranca" class=" job-status-blue"><td data="4"><img style="width: 32px; height: 32px; " alt="Success" class="icon-blue icon-lg" src="./Dashboard [Jenkins]_files/blue.png" tooltip="Success" title="Success"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><a class="build-health-link" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteSeguranca/lastBuild"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></a><div class="healthReportDetails"><table border="0"><thead><tr><th align="left">W</th><th align="left">Description</th><th align="right">%</th></tr></thead><tbody><tr><td align="left"><img style="width: 16px; height: 16px; " class="icon-health-80plus icon-sm" src="./Dashboard [Jenkins]_files/health-80plus(1).png"></td><td>Build stability: No recent builds failed.</td><td align="right">100</td></tr></tbody></table></div></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteSeguranca/">VejaTesteSeguranca</a></td><td data="2016-02-11T13:23:28Z">
+        2 hr 42 min
+        - <a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteSeguranca/lastSuccessfulBuild/">#2</a></td><td data="-">N/A</td><td data="14">14 ms</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTesteSeguranca/build?delay=0sec"><img title="Schedule a build with parameters for VejaTesteSeguranca" style="width: 24px; height: 24px; " alt="Schedule a build with parameters for VejaTesteSeguranca" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12259(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaTestPreProd" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTestPreProd/">VejaTestPreProd</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTestPreProd/build?delay=0sec"><img title="Schedule a build for VejaTestPreProd" style="width: 24px; height: 24px; " alt="Schedule a build for VejaTestPreProd" onclick="return build_id12260(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12260(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr><tr id="job_VejaTestProduction" class=" job-status-nobuilt"><td data="12"><img style="width: 32px; height: 32px; " alt="Not built" class="icon-nobuilt icon-lg" src="./Dashboard [Jenkins]_files/nobuilt.png" tooltip="Not built" title="Not built"></td><td data="100" class="healthReport" onmouseover="this.className=&#39;healthReport hover&#39;;return true;
+        " onmouseout="this.className=&#39;healthReport&#39;;return true;"><img style="width: 32px; height: 32px; " alt="100%" class="icon-health-80plus icon-lg" src="./Dashboard [Jenkins]_files/health-80plus.png"></td><td><a class="model-link inside" href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTestProduction/">VejaTestProduction</a></td><td data="-">N/A</td><td data="-">N/A</td><td data="0">N/A</td><td><a href="http://jenkins.wordpress.abril.com.br:8080/job/VejaTestProduction/build?delay=0sec"><img title="Schedule a build for VejaTestProduction" style="width: 24px; height: 24px; " alt="Schedule a build for VejaTestProduction" onclick="return build_id12261(this)" class="icon-clock icon-md" src="./Dashboard [Jenkins]_files/clock.png"></a><script>function build_id12261(img) {
+                  new Ajax.Request(img.parentNode.href);
+                  hoverNotification('Build scheduled', img, -100);
+                  return false;
+                }</script></td><td>&nbsp;</td></tr></tbody></table></div><div><table style="width:100%"><tbody><tr><td>Icon:
+        &nbsp;<a href="http://jenkins.wordpress.abril.com.br:8080/iconSize?16x16">S</a>&nbsp;<a href="http://jenkins.wordpress.abril.com.br:8080/iconSize?24x24">M</a>&nbsp;L</td><td><div align="right" style="margin:1em"><a href="http://jenkins.wordpress.abril.com.br:8080/legend">Legend</a><span style="padding-left:1em"><a href="http://jenkins.wordpress.abril.com.br:8080/rssAll"><img height="16" alt="Feed" width="16" src="./Dashboard [Jenkins]_files/atom.gif" border="0"></a>&nbsp;<a href="http://jenkins.wordpress.abril.com.br:8080/rssAll">RSS for all</a></span><span style="padding-left:1em"><a href="http://jenkins.wordpress.abril.com.br:8080/rssFailed"><img height="16" alt="Feed" width="16" src="./Dashboard [Jenkins]_files/atom.gif" border="0"></a>&nbsp;<a href="http://jenkins.wordpress.abril.com.br:8080/rssFailed">RSS for failures</a></span><span style="padding-left:1em"><a href="http://jenkins.wordpress.abril.com.br:8080/rssLatest"><img height="16" alt="Feed" width="16" src="./Dashboard [Jenkins]_files/atom.gif" border="0"></a>&nbsp;<a href="http://jenkins.wordpress.abril.com.br:8080/rssLatest">RSS for just latest builds</a></span></div></td></tr></tbody></table></div></div></div></div><footer><div class="container-fluid"><div class="row"><div class="col-md-6" id="footer"><div id="l10n-footer" style="display: block; float: left;"><a href="http://jenkins.wordpress.abril.com.br:8080/#" onclick="return showTranslationDialog();"><img src="./Dashboard [Jenkins]_files/flags.png">
+      Help us localize this page
+    </a></div></div><div class="col-md-18"><span class="page_generated">Page generated: Feb 11, 2016 2:06:27 PM BRST</span><span class="rest_api"><a href="http://jenkins.wordpress.abril.com.br:8080/api/">REST API</a></span><span class="jenkins_ver"><a href="http://jenkins-ci.org/">Jenkins ver. 1.645</a></span><div id="l10n-dialog" class="dialog"></div><script>var footer = document.getElementById('l10n-footer');
+    var f = document.getElementById('footer');
+    f.insertBefore(footer,f.firstChild);
+    footer.style.display="block";
+
+    var translation={}; 
+    translation.bundles = "yFvSmTBuhohutpjyADAgXRMDetMXs8D18lUIjP/bRyfp5Z6k7dmjTv24duwzg6+2Jyzzj1QKQHK6xv8SeTvRSLTk7hWA4wnuglYCe+VqaPpRIyCb7JDI/R9AGOp4+vVDZ3fG8WU1vaKCajzyat9V8oFLbpgyjgWPJmfbuWnj215JWydnS8oALeQtLs/3EU8iXB36qUg9hcjvzcR7Ij3Dus6Chrb+gbo5YJWRYWyEPju/smB8E98eCO0Xubqysi0xB0ZN44r5ssBLKFAt+GZb3dOi/wHyem+OUnEwjJ9Q8s8d3OML2bkQom/c58mnADGCFxM7hleMAQMUlj2wAClD6lcJG+Tf2tfd2UzEU7U2s4o/e93q/ibSF/21UR6gxLUYWbuUVhWQGi7mZA7wGWOncdl111pPpQLDLKpiyzDovN92x+fsnTnF7nNboDF8Iu2BjM/lGLI5xqr9q3+YGT9TkKTH5M8H0VtfY0tkTCRVoK9cHArF2C6yY5xW3n9Gy5toRg2BE2VoQn0zScd9TmO0F1G0UU4miIjPIsjz3JQsVVBUa7+4394X55z6nrrPQrXRMI6AyU5UC2sZzu9kwL9qiYA7ypsonQoyLazafJuzUHG9JVQGuAK/RGTOhc/K2eiNpqCHl3jlWrLlk+HxwuESac+QGBchHCLhS/dXhLVFnZoaddB+a3LhAkn8Fwpp7do2qYl5s8RuvL/ZsDL6y8vIdWOOMxYTpRp/VFgcwNRLvJsskl/fs1xDgeYH1qdhtzpaQZhmOMy/JdmOjpIKEojmtXwb1nyW340MW4fokh7GhZaDwH5j/fLSYbrV3q9fx3dRHfl6xQbIpbEg87lzdyNjMQ==";
+    translation.detectedLocale = "";
+
+    function showTranslationDialog() {
+      if(!translation.launchDialog)
+        loadScript("/static/89fde31b/plugin/translation/dialog.js");
+      else
+        translation.launchDialog();
+      return false; 
+    }</script></div></div></div></footer>
+
+
+
+<style>
+  .obrigado-box{
+    border:4px solid #69a61e;
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .obrigado-box strong{
+    font-size: 25px;
+  }
+  .obrigado-box .centro {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .obrigado-box p{
+    font-size: 18px;
+  }
+  .obrigado-box .imgs{
+    margin-top: 75px;
+    margin-left: -100px;
+  }
+  .obrigado-box .imgs img{
+    margin-left: 100px;
+  }
+</style>
+<div class="obrigado-box">
+  <div class="centro">
+    <strong>
+      Obrigado!
+    </strong>
+    <p>
+      Sua doação fará o pessoal da GRAAC muito feliz!
+    </p>
+    <p>
+      Saiba mais sobre a instituição e as formas de ajudar:
+    </p>
+    <div class="imgs">
+      <img src="../imagens/beminfinito.png">
+      <img src="../imagens/graac.png">
+    </div>
+  </div>
+</div>
+  </body><object id="bae93aab-593a-a5a4-da19-988d69a6a3a5" width="0" height="0" type="application/gas-events-uni"></object></html>

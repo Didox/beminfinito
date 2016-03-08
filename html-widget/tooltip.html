@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Tooltip - Custom Styling</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+.ui-tooltip {
+    position: relative;
+    float: left;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    font: bold 14px/20px sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+  }
+
+  .ui-tooltip:after,
+  .ui-tooltip:before{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-style: solid;
+    width: 0; 
+    height: 0; 
+    content:'';
+  }
+
+  .ui-tooltip:after {
+    margin-left: -10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #000 transparent transparent transparent;
+  }
+  .ui-tooltip:before {
+    margin-left: -14px;
+    border-width: 14px 14px 0 14px;
+    border-color: #fff transparent transparent transparent;
+
+  }
+  </style>
+</head>
+<body>
+ 
+<div role="tooltip" class="ui-tooltip">
+  We ask for your age only for statistical purposes.
+</div>
+
+
+<p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached to any element. When you hover
+the element with your mouse, the title attribute is displayed in a little box next to the element, just like a native tooltip.</p>
+<p>But as it's not a native tooltip, it can be styled. Any themes built with
+<a href="http://jqueryui.com/themeroller/" title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a>
+will also style tooltips accordingly.</p>
+<p>Tooltips are also useful for form elements, to show some additional information in the context of each field.</p>
+<p><label for="age">Your age:</label> 
+
+<input id="age" title="We ask for your age only for statistical purposes."></p>
+<p>Hover the field to see the tooltip.</p>
+ 
+ 
+</body>
+</html>

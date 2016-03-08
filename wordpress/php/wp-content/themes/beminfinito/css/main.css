@@ -220,3 +220,16 @@ h2 {
 .clearfix {
     *zoom: 1;
 }
+
+.blogs li{
+  list-style:none;
+}
+
+.blogs li a{
+  color: #444;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.blogs li a:hover{
+  text-decoration: underline;
+}

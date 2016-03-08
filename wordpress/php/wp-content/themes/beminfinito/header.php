@@ -51,8 +51,9 @@
 
             <nav class="main-menu hide-menu">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="cadastro/">Cadastro de interessados</a></li>
+                    <?php if(has_nav_menu('main-menu')): ?>
+                        <?php wp_nav_menu(array('theme_location'=>'main-menu','container'=>false,'items_wrap'=>'%3$s')) ?>
+                    <?php endif ?>
                 </ul>
             </nav>
         </div>    
