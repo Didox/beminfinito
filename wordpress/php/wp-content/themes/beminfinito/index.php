@@ -22,7 +22,7 @@ if( is_single() ){
 	}
 }else{ ?>
 	<section class="wrapper blogs">
-		<h1>Blogs</h1>
+		<h1>Blog</h1>
 		<ul>
 			<?php
 			if ( have_posts() ) { 

@@ -44,7 +44,7 @@
 	<header class="main-header">
         <div class="wrapper">
             <a href="/" class="logo">
-                <img src="/wp-content/themes/beminfinito/images/logo-bem-infinito.png" width="160" height="105" alt="Bem infinito" />
+                <img src="/wp-content/themes/beminfinito/images/logo-bem-infinito.png" width="160" height="93" alt="Bem infinito" />
             </a>
 
             <img src="/wp-content/themes/beminfinito/images/menu.png" alt="Menu" width="26" height="18" class="ico-menu" />

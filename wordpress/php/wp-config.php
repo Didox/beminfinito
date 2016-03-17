@@ -14,6 +14,11 @@
  * @package WordPress
  */
 
+if($_SERVER['SERVER_NAME'] == "beminfinito.com.br"){
+  header("location:http://www.beminfinito.com.br");
+  exit;
+}
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', getenv('OPENSHIFT_APP_NAME'));
@@ -32,6 +37,10 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
+define('WP_HOME','http://www.beminfinito.com.br');
+define('WP_SITEURL','http://www.beminfinito.com.br');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -121,7 +130,7 @@ define('WP_DEBUG', false);
 /**
  * We prefer to be secure by default
  */
-define('FORCE_SSL_ADMIN', true);
+define('FORCE_SSL_ADMIN', false);
 
 /* That's all, stop editing! Happy blogging. */
 
