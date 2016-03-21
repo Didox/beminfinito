@@ -1,0 +1,107 @@
+/*###############################################################################
+            RESET
+###############################################################################*/
+
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+#widgetBem{
+  position: relative;
+  float: left;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  font: bold 14px/20px sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #000;
+}
+  
+
+.bem-infinito-add-item {
+    border: 2px solid #69a61e;
+  }
+
+  .bem-infinito-add-item:after,
+  .bem-infinito-add-item:before{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-style: solid;
+    width: 0; 
+    height: 0; 
+    content:'';
+  }
+
+  .bem-infinito-add-item:after {
+    margin-left: -10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+  }
+  .bem-infinito-add-item:before {
+    margin-left: -14px;
+    border-width: 14px 14px 0 14px;
+    border-color: #69a61e transparent transparent transparent;
+
+  }
+
+  .bem-infinito-add-item .container{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .bem-infinito-add-item .container .nI{
+    width: 40px;
+    text-align: center;
+  }
+
+  .bem-infinito-add-item .container img{
+    width: 78px;
+  }
+
+  .bem-infinito-add-item .container .nR, .bem-infinito-add-item .container .nA {
+    width: 30px;
+    text-align: center;
+    background-color: #69a61e;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .bem-infinito-add-item .container .send {
+    width: 60px;
+    text-align: center;
+    background-color: #69a61e;
+    border: 0px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .bem-infinito-add-item .container .title{
+    margin-bottom: 10px;
+  }
+  .bem-infinito-add-item .container .buttons{
+    margin-top: 10px;
+  }
+  .bem-infinito-add-item .container .buttons img{
+    width: 50px;
+    margin-left: 10px;
+    display: none;
+  }
