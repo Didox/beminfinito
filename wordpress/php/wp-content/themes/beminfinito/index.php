@@ -22,14 +22,25 @@ if( is_single() ){
 	}
 }else{ ?>
 	<section class="wrapper blogs">
-		<h1>Blog</h1>
+		<h1>Bem-vindo ao blog do Bem Infinito</h1>
+		<h3 class="noticias-blog-title">Notícias</h3>
 		<ul>
 			<?php
 			if ( have_posts() ) { 
 			  while ( have_posts() ) : the_post(); ?>
 			  	<li>
-					<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" >', '</a>' ); ?>
-					<p><?php the_excerpt() ?></p>
+			  		<div class="content-blog">
+			  			<?php the_title( '<a href="' . esc_url( get_permalink() ) . '" >', '</a>' ); ?>
+						<p><?php the_excerpt() ?></p>
+						<div class="data">
+							<?php the_time('Y M d'); ?>
+						</div>
+					</div>
+			  		<div class="image-blog">
+		  				<a href="<?php echo esc_url( get_permalink() ) ?>" >
+		  					<?php the_post_thumbnail('featured-image') ?>
+		  				</a>
+		  			</div>
 				</li>
 			  <?php
 			  endwhile;

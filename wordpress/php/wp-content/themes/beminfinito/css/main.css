@@ -150,6 +150,24 @@ h2 {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+@media (max-width: 600px) {
+  .blogs li .content-blog{
+    width: 50%!important;
+  }
+}
+
+@media (min-width: 601px) {
+  .blogs li .content-blog{
+    width: 70%!important;
+  }
+}
+
+@media (min-width: 800px) {
+  .blogs li .content-blog{
+    width: 80%!important;
+  }
+}
+
 @media only screen and (max-width: 959px) {
 
     .hide-menu {
@@ -221,10 +239,24 @@ h2 {
     *zoom: 1;
 }
 
-.blogs li{
-  list-style:none;
+
+
+
+.blog h1{
+  font: 36px 'roboto';
+  max-width: 600px;
 }
 
+.blogs h1{
+  font: 36px 'roboto';
+}
+.blogs li{
+  clear: both;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+  list-style:none;
+  margin-right: 40px;
+}
 .blogs li a{
   color: #444;
   text-decoration: none;
@@ -233,3 +265,27 @@ h2 {
 .blogs li a:hover{
   text-decoration: underline;
 }
+.blogs .noticias-blog-title{
+  font-family: roboto;
+  margin-top: 60px;
+  margin-left: 40px;
+  color: #8B8989;
+}
+.blogs li .content-blog{
+  width: 80%;
+  float: left;
+}
+.blogs li .content-blog .data{
+  font-size: 13px;
+  color: #8B8989;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.blogs li .image-blog{
+  float: right;
+}
+
+
+
+
+

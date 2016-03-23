@@ -15,3 +15,5 @@ function wp_beminfinito_theme_setup(){
 		'main-menu'=>esc_html__('Main menu','wp-beminfinito-theme'),
 	));
 }
+
+add_theme_support( 'post-thumbnails' );
