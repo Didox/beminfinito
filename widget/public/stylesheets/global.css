@@ -19,7 +19,6 @@ fieldset, form, label, legend, input, button {
   border: 0;
 }
 
-
 #widgetBem{
   position: relative;
   float: left;
@@ -29,79 +28,31 @@ fieldset, form, label, legend, input, button {
   color: #fff;
   text-transform: uppercase;
   border-radius: 20px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px #69a61e;
+  display: none;
 }
-  
 
-.bem-infinito-add-item {
-    border: 2px solid #69a61e;
-  }
+.bem-infinito-add-item:after,
+.bem-infinito-add-item:before{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  width: 0; 
+  height: 0; 
+  content:'';
+}
 
-  .bem-infinito-add-item:after,
-  .bem-infinito-add-item:before{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    border-style: solid;
-    width: 0; 
-    height: 0; 
-    content:'';
-  }
+.bem-infinito-add-item:after {
+  margin-left: -10px;
+  border-width: 16px 10px 0 10px;
+  border-color: #fff transparent transparent transparent;
+}
+.bem-infinito-add-item:before {
+  margin-left: -14px;
+  border-width: 21px 14px 0 14px;
+  border-color: #96E92F transparent transparent transparent;
+  margin-top: 2px;
+}
 
-  .bem-infinito-add-item:after {
-    margin-left: -10px;
-    border-width: 10px 10px 0 10px;
-    border-color: #fff transparent transparent transparent;
-  }
-  .bem-infinito-add-item:before {
-    margin-left: -14px;
-    border-width: 14px 14px 0 14px;
-    border-color: #69a61e transparent transparent transparent;
 
-  }
-
-  .bem-infinito-add-item .container{
-    width: 300px;
-    height: 150px;
-    text-align: center;
-  }
-
-  .bem-infinito-add-item .container .nI{
-    width: 40px;
-    text-align: center;
-  }
-
-  .bem-infinito-add-item .container img{
-    width: 78px;
-  }
-
-  .bem-infinito-add-item .container .nR, .bem-infinito-add-item .container .nA {
-    width: 30px;
-    text-align: center;
-    background-color: #69a61e;
-    border: 0px;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-  }
-
-  .bem-infinito-add-item .container .send {
-    width: 60px;
-    text-align: center;
-    background-color: #69a61e;
-    border: 0px;
-    border-radius: 6px;
-    color: #fff;
-    font-weight: bold;
-  }
-  .bem-infinito-add-item .container .title{
-    margin-bottom: 10px;
-  }
-  .bem-infinito-add-item .container .buttons{
-    margin-top: 10px;
-  }
-  .bem-infinito-add-item .container .buttons img{
-    width: 50px;
-    margin-left: 10px;
-    display: none;
-  }

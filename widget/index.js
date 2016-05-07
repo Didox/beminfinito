@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var logger = require('morgan');
 var routes = require('./app/routes/index');
-require('newrelic');
 
 app.set('port', (process.env.PORT || 3000));
 

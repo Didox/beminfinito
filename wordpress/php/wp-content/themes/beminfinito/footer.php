@@ -9,7 +9,7 @@
 	<footer class="main-footer">
         <div class="wrapper">
             <a href="/" class="logo">
-                <img src="/wp-content/themes/beminfinito/images/logo-bem-infinito.png" width="91" height="60" alt="Bem infinito" />
+                <img src="<?php echo get_bloginfo('template_url') ?>/images/logo-bem-infinito.png" width="91" height="60" alt="Bem infinito" />
             </a>
 
             <nav class="main-menu">
@@ -21,7 +21,7 @@
             </nav>
         </div>  
     </footer>
-	<script src="/wp-content/themes/beminfinito/js/libs/jquery-1.11.2.min.js"></script>
-    <script src="/wp-content/themes/beminfinito/js/main.js"></script>
+	<script src="<?php echo get_bloginfo('template_url') ?>/js/libs/jquery-1.11.2.min.js"></script>
+    <script src="<?php echo get_bloginfo('template_url') ?>/js/main.js"></script>
 </body>
 </html>

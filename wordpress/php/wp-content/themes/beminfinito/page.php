@@ -4,7 +4,6 @@
  * @subpackage BemInfinito
  * @since Bem Infinito 1.0
  */
-
 get_header(); 
 ?>
 

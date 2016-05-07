@@ -4,8 +4,16 @@ var BemInfinitoWidget = (function (module, $) {
     this.writeHtml = function(data, selectorForRender){
       if(selectorForRender){
         $(selectorForRender).html(data);
+        $(".produtos a").click(function(){
+          $("#widgetBem").show();
+          $("#widgetBem").css({
+            'position':'absolute',
+            'top': $(this).offset().top - 200,
+            'left': $(this).offset().left  - 155
+          });
+        });
       }else{
-        document.write(data);
+        console.log("Faltou definir o elemento render");
       }
     };
 
@@ -21,6 +29,19 @@ var BemInfinitoWidget = (function (module, $) {
       }).fail(function(jqXHR, textStatus) {
         module.Logger.log("Erro ao renderizar widget: " + textStatus, container);
       });
+    };
+
+    this.iframe = function(url, container, callback){
+      module.Helper.writeHtml('<div id="widgetBem">'+
+                              '  <div class="bem-infinito-add-item">'+
+                              '    <div class="container"> ' + 
+                              '      <iframe src="' + url + '" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>'+ 
+                              '    </div>'+
+                              '   </div>'+
+                              ' </div>', container);
+      if(callback) {
+        callback.call();
+      }
     };
 
     this.ajaxCallWithCallBack = function(url, callback){
@@ -44,7 +65,8 @@ var BemInfinitoWidget = (function (module, $) {
 
   // Render News Widget
   module.render = function(options, callback){
-    module.Helper.ajaxCall('/v1/widget', options.selectorForRender, callback);
+    //module.Helper.ajaxCall('/v1/widget', options.selectorForRender, callback);
+    module.Helper.iframe('/v1/widget', options.selectorForRender, callback);
   };
 
   return module;

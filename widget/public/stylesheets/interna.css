@@ -1,0 +1,103 @@
+/*###############################################################################
+            RESET
+###############################################################################*/
+
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, button {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  overflow:hidden;
+  font-family: arial;
+  font-size: 12px;
+}
+
+.bem-infinito-interna{
+  width: 300px;
+  height: 150px;
+  text-align: center;
+}
+
+.bem-infinito-interna .nI{
+  width: 40px;
+  text-align: center;    
+  border: 2px solid #69a61e;
+  height: 20px;
+}
+
+.bem-infinito-interna img{
+  width: 100px;
+}
+.bem-infinito-interna.obrigado img{
+  width: 80px;
+}
+.bem-infinito-interna .nR, .bem-infinito-interna .nA {
+  width: 30px;
+  text-align: center;
+  background-color: #69a61e;
+  border: 0px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bem-infinito-interna .send {
+  width: 60px;
+  text-align: center;
+  background-color: #69a61e;
+  border: 0px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  height: 20px;
+  cursor: pointer;
+}
+.bem-infinito-interna .title{
+  margin-bottom: 10px;
+  color: #4E8808;
+  font-weight: bold;
+  font-size: 16px;
+}
+.bem-infinito-interna .buttons{
+  width: 235px;
+  clear: both;
+  margin: auto;
+}
+.bem-infinito-interna .buttons .acoes{
+  margin-top: 10px;
+  float: left;
+}
+.bem-infinito-interna .buttons img.logo{
+  width: 50px;
+  margin-left: 10px;
+  float: right;
+  margin-top: 7px;
+}
+.bem-infinito-interna .logos img.logo{
+  width: 60px;
+}
+.bem-infinito-interna .agradecimentos{
+  color: #4E8808;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+
+
+

@@ -152,7 +152,10 @@ h2 {
    ========================================================================== */
 @media (max-width: 600px) {
   .blogs li .content-blog{
-    width: 50%!important;
+    width: 100%!important;
+  }
+  .blogs li .image-blog{
+    display: none;
   }
 }
 
@@ -240,11 +243,16 @@ h2 {
 }
 
 
-
+.wrapper.blog .content{
+  width: 80%;
+  clear: both;
+  margin: auto;
+}
 
 .blog h1{
   font: 36px 'roboto';
   max-width: 600px;
+  text-align: left;
 }
 
 .blogs h1{
@@ -275,6 +283,10 @@ h2 {
   width: 80%;
   float: left;
 }
+.blogs li .content-blog p, .blogs li .content-blog .data{
+  font-weight: lighter;
+  text-decoration: none;
+}
 .blogs li .content-blog .data{
   font-size: 13px;
   color: #8B8989;
@@ -283,6 +295,12 @@ h2 {
 }
 .blogs li .image-blog{
   float: right;
+}
+
+
+.parceiros .image-parceiros img{
+  width: 140px;
+  height: auto;
 }
 
 
