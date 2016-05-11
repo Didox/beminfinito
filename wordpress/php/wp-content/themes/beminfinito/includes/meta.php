@@ -46,10 +46,10 @@ if(is_page()) {
   }
 }
 else if(is_single()) {
-	while(have_posts()): the_post();
-		$description_content = preg_replace("/&#?[a-z0-9]+;/i","", get_the_excerpt());
-		$meta_image=(has_post_thumbnail()?get_the_post_thumbnail_url():$meta_image);
-		$meta_title=preg_replace("/&#?[a-z0-9]+;/i","", get_the_title().' | '.$meta_title);
+  while(have_posts()): the_post();
+    $description_content = preg_replace("/&#?[a-z0-9]+;/i","", get_the_excerpt());
+    $meta_image=(get_field('imagem_og', $post->ID)?get_field('imagem_og', $post->ID):$meta_image);
+    $meta_title=preg_replace("/&#?[a-z0-9]+;/i","", get_the_title().' | '.$meta_title);
     $meta_type='article';
 
     $key = "";
@@ -60,16 +60,16 @@ else if(is_single()) {
     if($key != ""){
       $keywords = $key;
     }
-	endwhile;
+  endwhile;
 } else if (is_archive()) {
-	if (is_tag()) {
-		$meta_title = $title = 'Bem infinito blog' . ' | ' . $meta_title;
-		$description_content = preg_replace("/&#?[a-z0-9]+;/i","", tag_description($tag -> term_id));
-	} else {
-		$meta_title = $title = preg_replace("/&#?[a-z0-9]+;/i","", $meta_title);
+  if (is_tag()) {
+    $meta_title = $title = 'Tags' . ' | ' . $meta_title;
+    $description_content = preg_replace("/&#?[a-z0-9]+;/i","", tag_description($tag -> term_id));
+  } else {
+    $meta_title = $title = preg_replace("/&#?[a-z0-9]+;/i","", $meta_title);
     $cat_id=get_cat_id(single_cat_title( '', false ));
-		$description_content = preg_replace("/&#?[a-z0-9]+;/i","", category_description($cat_id));
-	}
+    $description_content = preg_replace("/&#?[a-z0-9]+;/i","", category_description($cat_id));
+  }
 }
 ?>
 <title><?php echo esc_html($meta_title); ?></title>

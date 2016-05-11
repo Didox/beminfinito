@@ -11,10 +11,12 @@ global $meta_title, $meta_image, $description_content, $keywords;
 if(get_option('page_for_posts') ){
   $page = get_page( get_option('page_for_posts') );
   $meta_title = $page->post_title . " | " . get_bloginfo('name');
-  $img = get_the_post_thumbnail_url( $page->ID, 'thumbnail' );
-  if($img != ""){
-    $meta_image = $img;
-  }
+  /////// não sei porque porra a merda do servidor do getupcloud não funciona isso ///////
+  // $img = get_the_post_thumbnail_url( $page->ID, 'thumbnail' );
+  // if($img != ""){
+  //   $meta_image = $img;
+  // }
+  /////// não sei porque porra a merda do servidor do getupcloud não funciona isso ///////
   $desc = get_field('descricao', $page->ID);
   if($desc != ""){
     $description_content = preg_replace("/&#?[a-z0-9]+;/i","", $desc);
