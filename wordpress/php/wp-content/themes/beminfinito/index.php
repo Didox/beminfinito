@@ -73,6 +73,9 @@ if( is_single() ){
         endwhile;
       } ?>
     </ul>
+    <div class="blogs-pagination">
+      <?php wp_pagenavi(); ?>
+    </div>
   </section>
 <?php
 }
