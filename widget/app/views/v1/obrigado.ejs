@@ -2,7 +2,7 @@
 <div class="bem-infinito-interna obrigado">
   <div class="title">Obrigado por doar <%= quantidade %> produto</div>
   <div>
-    <img src="/imagens/omo-1kg.jpg">
+    <img class="produto" src="<%= (imgproduto ? imgproduto : '/imagens/omo-1kg.jpg') %>">
   </div>
   <div class="agradecimentos">
     O bem infinito e o Graacc agradece sua colaboração

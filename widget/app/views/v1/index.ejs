@@ -1,18 +1,15 @@
-<script type="text/javascript" src="/javascripts/jquery-1.12.2.min.js"></script>
-<script type="text/javascript" src="/javascripts/acoes.js"></script>
-<link rel="stylesheet" type="text/css" href="/stylesheets/interna.css" />
 <div class="bem-infinito-interna">
   <div class="title">Usar este item</div>
   <div>
-    <img src="/imagens/omo-1kg.jpg">
+    <img class="produto" src="<%= (imgproduto ? imgproduto : '/imagens/omo-1kg.jpg') %>">
   </div>
   <div class="buttons">
     <div class="acoes">
-      <input type="button" class="nR" onclick="BemInfinito.Doacao.add(-1)" value="-">
-      <input type="text" class="nI" id="quantidade" value="1">
-      <input type="button" class="nA" onclick="BemInfinito.Doacao.add(+1)" value="+">
-      <input type="button" class="send" onclick="BemInfinito.Doacao.enviar()" value="Enviar">
+      <input type="button" class="nR" onclick="BemInfinito.Doacao.add(-1, '<%= imgproduto%>')" value="-">
+      <input type="text" class="nI" id="quantidade" value="0">
+      <input type="button" class="nA" onclick="BemInfinito.Doacao.add(+1, '<%= imgproduto%>')" value="+">
+      <input type="button" class="send" onclick="BemInfinito.Doacao.enviar()" value="Fechar">
     </div>
-    <img class="logo" src="/imagens/beminfinito.png">
+    <img class="logo" src="http://beminfinito-widget.herokuapp.com/imagens/beminfinito.png">
   </div>
 </div>

@@ -30,6 +30,13 @@ fieldset, form, label, legend, input, button {
   border-radius: 20px;
   box-shadow: 0 0 10px #69a61e;
   display: none;
+  background-color: #fff;
+}
+
+.bem-infinito-add-fechar{
+  color: #4E8808;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .bem-infinito-add-item:after,
@@ -53,6 +60,72 @@ fieldset, form, label, legend, input, button {
   border-width: 21px 14px 0 14px;
   border-color: #96E92F transparent transparent transparent;
   margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bem-infinito-interna{
+  width: 300px !important;
+  height: 150px !important;
+  text-align: center !important;
+}
+
+
+.bem-infinito-interna .nI{
+  width: 40px !important;
+  text-align: center!important;
+}
+
+.bem-infinito-interna.obrigado img{
+  width: 80px !important;
+}
+.bem-infinito-interna .nR, .bem-infinito-interna .nA {
+  cursor: pointer !important;
+}
+
+.produto{
+  height: 80px !important;
+  width: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+}
+
+.bem-infinito-interna .send {
+  cursor: pointer !important;
+}
+.bem-infinito-interna .title{
+  margin-bottom: 10px !important;
+  color: #4E8808 !important;
+  font-weight: bold !important;
+  font-size: 16px !important;
+}
+.bem-infinito-interna .buttons{
+  width: 235px !important;
+  clear: both !important;
+  margin: auto !important;
+}
+.bem-infinito-interna .buttons .acoes{
+  margin-top: 10px !important;
+  float: left !important;
+}
+.bem-infinito-interna .buttons img.logo{
+  width: 50px !important;
+  margin-left: 10px !important;
+  float: right !important;
+  margin-top: 7px !important;
+}
+.bem-infinito-interna .logos img.logo{
+  width: 60px !important;
 }
 
 

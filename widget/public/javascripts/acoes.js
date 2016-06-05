@@ -11,9 +11,10 @@ BemInfinito.Doacao.add = function(valor){
   }
 
   $("#quantidade").val(qtd);
+
 }
 
 BemInfinito.Doacao.enviar = function(){
-  window.location.href = "/v1/widget/obrigado?quantidade=" + $("#quantidade").val();
+  window.location.href = "/v1/widget/obrigado?quantidade=" + $("#quantidade").val() + "&imgproduto=" + $(".produto").attr("src");
 }
 

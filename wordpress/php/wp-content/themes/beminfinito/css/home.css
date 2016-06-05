@@ -128,3 +128,20 @@ h1 {
         margin: 0 auto 20px!important;
     }
 }
+
+.apoio-box ul.apoio{
+    margin: 0px;
+    padding: 0px;
+}
+.apoio-box ul.apoio li{
+    float: left;
+    list-style-type: none;
+    margin-right: 30px;
+}
+.apoio-box ul.apoio li a{
+    margin: 0px;
+}
+.apoio-box ul.apoio li a img{
+    width: 100px;
+}
+

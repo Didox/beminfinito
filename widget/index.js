@@ -10,9 +10,15 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/app/views');
 app.set('view engine', 'ejs');
 
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
 app.use(function(req, res, next) {
-  res.header('Vary', 'X-Device, Origin');
-  res.setHeader('Cache-Control', 'max-age=3600, public, no-transform');
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'POST, GET');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Credentials', true);
+  res.header("X-Frame-Options", "ALLOWALL");
   next();
 });
 
